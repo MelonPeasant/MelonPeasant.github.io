@@ -1,0 +1,33 @@
+{
+  "name": "melopeasant.github.io",
+  "version": "1.0.0",
+  "description": "Blog备份",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "SET NODE_OPTIONS=--openssl-legacy-provider && webpack-dev-server --env.server --env.develop --inline --max-old-space-size=3000",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "SET NODE_OPTIONS=--openssl-legacy-provider && vuepress build docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MeloPeasant/MeloPeasant.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MeloPeasant/MeloPeasant.github.io/issues"
+  },
+  "homepage": "https://github.com/MeloPeasant/MeloPeasant.github.io#readme",
+  "devDependencies": {
+    "vuepress": "^1.9.10",
+    "vuepress-theme-reco": "^1.6.17"
+  },
+  "dependencies": {
+    "vuepress-plugin-code-copy": "^1.0.6"
+  },
+  "directories": {
+    "doc": "docs"
+  }
+}
