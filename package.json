@@ -1,0 +1,14 @@
+{
+  "name": "melonpeasant.github.io",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs",
+    "deploy": "gh-pages -d docs/.vitepress/dist -t true"
+  },
+  "devDependencies": {
+    "vitepress": "^1.6.0",
+    "gh-pages": "^6.2.0"
+  }
+}
