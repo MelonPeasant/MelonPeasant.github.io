@@ -33,9 +33,9 @@ export default defineConfig({
         text: 'VuePress',
         collapsed: true,
         items: [
-          { text: '本地搭建VuePress', link: '/posts/vuepress/vuepresssetup' },
-          { text: '部署到GitHub Pages', link: '/posts/vuepress/vuepressdeploy' },
-          { text: 'VuePress笔记', link: '/posts/vuepress/vuepressnote' }
+          { text: '本地搭建VuePress', link: '/posts/VuePress/vuepresssetup' },
+          { text: '部署到GitHub Pages', link: '/posts/VuePress/vuepressdeploy' },
+          { text: 'VuePress笔记', link: '/posts/VuePress/vuepressnote' }
         ]
       },
       {
