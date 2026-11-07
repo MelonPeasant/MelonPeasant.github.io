@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 export default defineConfig({
   // 网站标题
-  title: "MelonPeasant's Blog",
+  title: "码农",
   // 描述
   description: '用 VitePress 搭建的个人博客',
   // 重要！base 配置：
@@ -19,26 +19,41 @@ export default defineConfig({
 
   themeConfig: {
     nav: [
-      { text: '首页', link: '/' },
-      { text: '文章', link: '/posts/hello' }
+      { text: '首页', link: '/' }
     ],
     sidebar: [
       {
         text: '文章列表',
         collapsed: false,
         items: [
-          { text: 'BusyBox制作Rootfs', link: '/posts/busybox' },
-          { text: 'Git相关命令', link: '/posts/aboutgitcmd' }
-          
+          { text: 'BusyBox制作Rootfs', link: '/posts/busybox' }
         ]
       },
       {
         text: 'VuePress',
         collapsed: true,
         items: [
-          { text: '本地搭建VuePress', link: '/posts/VuePress/vuepresssetup' },
-          { text: '部署到GitHub Pages', link: '/posts/VuePress/vuepressdeploy' },
-          { text: 'VuePress笔记', link: '/posts/VuePress/vuepressnote' }
+          { text: '本地搭建VuePress', link: '/posts/vuepress/vuepresssetup' },
+          { text: '部署到GitHub Pages', link: '/posts/vuepress/vuepressdeploy' },
+          { text: 'VuePress笔记', link: '/posts/vuepress/vuepressnote' }
+        ]
+      },
+      {
+        text: 'WordPress',
+        collapsed: true,
+        items: [
+          { text: 'WordPress', link: '/posts/wordpress/wordpress' },
+          { text: 'WordPress Q&A', link: '/posts/wordpress/wordpressqanda' }
+        ]
+      },
+      {
+        text: 'GIT',
+        collapsed: true,
+        items: [
+          { text: 'Git相关命令', link: '/posts/git/aboutgitcmd' },
+          { text: 'Git仓库初始化', link: '/posts/git/gitreadme' },
+          { text: 'GitHub和Gitee多账户', link: '/posts/git/githubandgitee' },
+          { text: 'Ubuntu配置GitHub', link: '/posts/git/githubonubuntu' }
         ]
       }
     ],
