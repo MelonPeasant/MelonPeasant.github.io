@@ -47,6 +47,14 @@ export default defineConfig({
         ]
       },
       {
+        text: 'Linux',
+        collapsed: true,
+        items: [
+          { text: 'Ubuntu笔记', link: '/posts/linux/ubuntunote' },
+          { text: '磁盘格式化并挂载', link: '/posts/linux/formatdisk' },
+        ]
+      },
+      {
         text: 'GIT',
         collapsed: true,
         items: [
