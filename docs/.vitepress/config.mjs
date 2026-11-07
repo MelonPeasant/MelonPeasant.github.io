@@ -43,6 +43,7 @@ export default defineConfig({
         collapsed: true,
         items: [
           { text: 'WordPress', link: '/posts/wordpress/wordpress' },
+          { text: 'MySQL和HTTPS配置', link: '/posts/wordpress/mysqlandhttps' },
           { text: 'WordPress Q&A', link: '/posts/wordpress/wordpressqanda' }
         ]
       },
