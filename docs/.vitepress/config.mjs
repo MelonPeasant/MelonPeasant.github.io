@@ -1,57 +1,13 @@
 import { defineConfig } from 'vitepress'
-import fs from 'node:fs'
-import path from 'node:path'
-import { fileURLToPath } from 'node:url'
-
-const __filename = fileURLToPath(import.meta.url)
-const __dirname = path.dirname(__filename)
-
-// posts 文件夹绝对路径
-const postsDir = path.resolve(__dirname, '../../posts')
-
-function getPostsSidebar() {
-  if (!fs.existsSync(postsDir)) return []
-
-  const files = fs.readdirSync(postsDir)
-  const posts = []
-
-  for (const fname of files) {
-    if (!fname.endsWith('.md')) continue
-    const filePath = path.join(postsDir, fname)
-    const content = fs.readFileSync(filePath, 'utf8')
-
-    // 提取 frontmatter --- 之间的内容
-    const match = content.match(/^---\s*\n([\s\S]*?)\n---/)
-    if (!match) continue
-
-    const fmRaw = match[1]
-    const titleMatch = fmRaw.match(/title:\s*(.+)/)
-    const dateMatch = fmRaw.match(/date:\s*(.+)/)
-
-    const title = titleMatch?.[1]?.trim() || fname
-    const date = dateMatch?.[1]?.trim() || '0000-00-00'
-    const link = `/posts/${fname.replace('.md', '')}`
-
-    posts.push({ title, date, link })
-  }
-
-  // 按日期倒序，新文章放上面
-  posts.sort((a, b) => b.date.localeCompare(a.date))
-
-  return [
-    {
-      text: '文章列表',
-      items: posts.map(p => ({
-        text: p.title,
-        link: p.link
-      }))
-    }
-  ]
-}
 
 export default defineConfig({
+  // 网站标题
   title: "MelonPeasant's Blog",
+  // 描述
   description: '用 VitePress 搭建的个人博客',
+  // 重要！base 配置：
+  // 因为仓库是 MelonPeasant.github.io，根站点，base 写 '/'
+  // 如果是普通项目仓库才需要 '/仓库名/'，这里不要写仓库名！
   base: '/',
 
   themeConfig: {
@@ -59,9 +15,20 @@ export default defineConfig({
       { text: '首页', link: '/' },
       { text: '文章', link: '/posts/hello' }
     ],
-    sidebar: getPostsSidebar(),
+    sidebar: [
+      {
+        text: '文章列表',
+        items: [
+          { text: '第一篇文章', link: '/posts/hello' },
+          { text: 'BusyBox制作Rootfs', link: '/posts/busybox' },
+          { text: 'Git相关命令', link: '/posts/aboutgitcmd' }
+          
+        ]
+      }
+    ],
     socialLinks: [
       { icon: 'github', link: 'https://github.com/MelonPeasant' }
     ]
   }
 })
+
