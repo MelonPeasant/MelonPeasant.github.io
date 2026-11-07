@@ -1,8 +1,9 @@
 ---
 title: 部署到GitHub Pages
 author: 麻瓜【码瓜】
-date: '2024-07-01'
+date: 2024-07-01
 ---
+# 部署到GitHub Pages
 ## 编译
 在`<respositoy>.github.io`目录下使用cmd运行
 ```

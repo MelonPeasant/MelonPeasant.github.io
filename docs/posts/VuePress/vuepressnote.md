@@ -3,6 +3,7 @@ title: VuePress笔记
 author: 麻瓜【码瓜】
 date: '2024-07-30'
 ---
+# VuePress笔记
 ## 报错（一）  
 运行```npm run docs:build```报错```Error: error:0308010C:digital envelope routines::unsupported```   
 ### 方法一  

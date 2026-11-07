@@ -3,6 +3,7 @@ title: 本地搭建VuePress
 author: 麻瓜【码瓜】
 date: '2024-07-01'
 ---
+# 本地搭建VuePress
 ## 0. 关于VuePress  
 VuePress 自然不用多说，基于 Vue 的静态网站生成器，风格简约，配置也比较简单。之所以不使用 VitePress，是因为想使用现有的主题， 而 VitePress 不兼容当前 VuePress 的生态系统，至于为什么不选择 VuePress@next，考虑到还处于 Beta 阶段，等稳定后再开始迁移。  
 

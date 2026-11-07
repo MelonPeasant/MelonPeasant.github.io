@@ -10,6 +10,13 @@ export default defineConfig({
   // 如果是普通项目仓库才需要 '/仓库名/'，这里不要写仓库名！
   base: '/',
 
+  // transformPageData(pageData) {
+  //   // 路径以 /posts/ 开头，自动设置布局
+  //   if (pageData.frontmatter.layout === undefined && pageData.filePath.startsWith('posts/')) {
+  //     pageData.frontmatter.layout = 'PostLayout'
+  //   }
+  //   },
+
   themeConfig: {
     nav: [
       { text: '首页', link: '/' },
@@ -18,8 +25,8 @@ export default defineConfig({
     sidebar: [
       {
         text: '文章列表',
+        collapsed: false,
         items: [
-          { text: '第一篇文章', link: '/posts/hello' },
           { text: 'BusyBox制作Rootfs', link: '/posts/busybox' },
           { text: 'Git相关命令', link: '/posts/aboutgitcmd' }
           
@@ -27,10 +34,11 @@ export default defineConfig({
       },
       {
         text: 'VuePress',
+        collapsed: true,
         items: [
-          { text: 'VuePress部署', link: '/posts/VuePress/vuepressdeploy' },
-          { text: 'VuePress笔记', link: '/posts/VuePress/vuepressnote' },
-          { text: 'VuePress设置', link: '/posts/VuePress/vuepresssetup' }
+          { text: '本地搭建VuePress', link: '/posts/VuePress/vuepresssetup' },
+          { text: '部署到GitHub Pages', link: '/posts/VuePress/vuepressdeploy' },
+          { text: 'VuePress笔记', link: '/posts/VuePress/vuepressnote' }
         ]
       }
     ],
