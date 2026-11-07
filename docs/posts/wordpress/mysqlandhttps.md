@@ -3,6 +3,7 @@ title: MySQL和HTTPS配置
 author: 麻瓜【码瓜】
 date: '2024-07-04'
 ---
+# MySQL和HTTPS配置
 ## MySQL无法远程连接  
 修改配置文件```/etc/mysql/mysql.conf.d/mysqld.cnf```，将```bind-address = 127.0.0.1```注释掉  
 
