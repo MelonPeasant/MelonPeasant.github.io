@@ -24,6 +24,14 @@ export default defineConfig({
           { text: 'Git相关命令', link: '/posts/aboutgitcmd' }
           
         ]
+      },
+      {
+        text: 'VuePress',
+        items: [
+          { text: 'VuePress部署', link: '/posts/VuePress/vuepressdeploy' },
+          { text: 'VuePress笔记', link: '/posts/VuePress/vuepressnote' },
+          { text: 'VuePress设置', link: '/posts/VuePress/vuepresssetup' }
+        ]
       }
     ],
     socialLinks: [
