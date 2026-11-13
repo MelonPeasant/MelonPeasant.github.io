@@ -89,6 +89,15 @@ export default defineConfig({
         ]
       }
     ],
+    // 本地搜索（内置，不用额外付费）
+    search: {
+      provider: 'local'
+    },
+    // 文章底部：上次更新时间
+    lastUpdated: {
+      text: '最后更新：',
+      formatOptions: { dateStyle: 'short' }
+    },
     socialLinks: [
       { icon: 'github', link: 'https://github.com/MelonPeasant' }
     ]
