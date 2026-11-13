@@ -33,37 +33,37 @@ export default defineConfig({
         text: 'VuePress',
         collapsed: true,
         items: [
-          { text: '本地搭建VuePress', link: '/posts/VuePress/vuepresssetup' },
-          { text: '部署到GitHub Pages', link: '/posts/VuePress/vuepressdeploy' },
-          { text: 'VuePress笔记', link: '/posts/VuePress/vuepressnote' }
+          { text: '本地搭建VuePress', link: '/posts/vuepresssetup' },
+          { text: '部署到GitHub Pages', link: '/posts/vuepressdeploy' },
+          { text: 'VuePress笔记', link: '/posts/vuepressnote' }
         ]
       },
       {
         text: 'WordPress',
         collapsed: true,
         items: [
-          { text: 'WordPress', link: '/posts/wordpress/wordpress' },
-          { text: 'MySQL和HTTPS配置', link: '/posts/wordpress/mysqlandhttps' },
-          { text: 'WordPress Q&A', link: '/posts/wordpress/wordpressqanda' }
+          { text: 'WordPress', link: '/posts/wordpress' },
+          { text: 'MySQL和HTTPS配置', link: '/posts/mysqlandhttps' },
+          { text: 'WordPress Q&A', link: '/posts/wordpressqanda' }
         ]
       },
       {
         text: 'Linux',
         collapsed: true,
         items: [
-          { text: 'Ubuntu笔记', link: '/posts/linux/ubuntunote' },
-          { text: '磁盘格式化并挂载', link: '/posts/linux/formatdisk' },
-          { text: '添加开机脚本', link: '/posts/linux/startup' },
+          { text: 'Ubuntu笔记', link: '/posts/ubuntunote' },
+          { text: '磁盘格式化并挂载', link: '/posts/formatdisk' },
+          { text: '添加开机脚本', link: '/posts/startup' },
         ]
       },
       {
         text: 'GIT',
         collapsed: true,
         items: [
-          { text: 'Git相关命令', link: '/posts/git/aboutgitcmd' },
-          { text: 'Git仓库初始化', link: '/posts/git/gitreadme' },
-          { text: 'GitHub和Gitee多账户', link: '/posts/git/githubandgitee' },
-          { text: 'Ubuntu配置GitHub', link: '/posts/git/githubonubuntu' }
+          { text: 'Git相关命令', link: '/posts/aboutgitcmd' },
+          { text: 'Git仓库初始化', link: '/posts/gitreadme' },
+          { text: 'GitHub和Gitee多账户', link: '/posts/githubandgitee' },
+          { text: 'Ubuntu配置GitHub', link: '/posts/githubonubuntu' }
         ]
       }
     ],
