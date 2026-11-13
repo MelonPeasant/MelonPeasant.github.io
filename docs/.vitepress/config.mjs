@@ -65,6 +65,22 @@ export default defineConfig({
           { text: 'GitHub和Gitee多账户', link: '/posts/githubandgitee' },
           { text: 'Ubuntu配置GitHub', link: '/posts/githubonubuntu' }
         ]
+      },
+      {
+        text: '待整理',
+        collapsed: true,
+        items: [
+          { text: 'Frp服务端+客户端搭建', link: '/posts/frpsetup' },
+          { text: '搭建HY2服务器', link: '/posts/hysteria2' },
+          { text: '本地配置SSL证书', link: '/posts/mkcert' },
+          { text: 'Ubuntu22.04下搭建Nginx+PHP+MySql服务', link: '/posts/nginxphpmysql' },
+          { text: '笔记', link: '/posts/noteone' },
+          { text: '打造无指纹浏览器', link: '/posts/privateedge' },
+          { text: '系统恢复出厂设置', link: '/posts/recover' },
+          { text: 'Ubuntu-Base制作Rootfs', link: '/posts/ubuntubase' },
+          { text: '搭建V2Ray服务器（ws+tls+web）', link: '/posts/v2raywstlsweb' },
+          { text: 'XRAY支持REALITY协议', link: '/posts/xtlsrprxvision' }
+        ]
       }
     ],
     socialLinks: [
