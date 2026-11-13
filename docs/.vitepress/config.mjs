@@ -23,14 +23,18 @@ export default defineConfig({
     ],
     sidebar: [
       {
-        text: '文章列表',
+        text: '定制Ubuntu系统',
+        link: '/posts/busybox',
         collapsed: false,
         items: [
-          { text: 'BusyBox制作Rootfs', link: '/posts/busybox' }
+          { text: 'BusyBox制作Rootfs', link: '/posts/busybox' },
+          { text: 'Ubuntu-Base制作Rootfs', link: '/posts/ubuntubase' },
+          { text: '系统恢复出厂设置', link: '/posts/recover' }
         ]
       },
       {
         text: 'VuePress',
+        link: '/posts/vuepresssetup',
         collapsed: true,
         items: [
           { text: '本地搭建VuePress', link: '/posts/vuepresssetup' },
@@ -40,6 +44,7 @@ export default defineConfig({
       },
       {
         text: 'WordPress',
+        link: '/posts/wordpress',
         collapsed: true,
         items: [
           { text: 'WordPress', link: '/posts/wordpress' },
@@ -49,6 +54,7 @@ export default defineConfig({
       },
       {
         text: 'Linux',
+        link: '/posts/ubuntunote',
         collapsed: true,
         items: [
           { text: 'Ubuntu笔记', link: '/posts/ubuntunote' },
@@ -58,6 +64,7 @@ export default defineConfig({
       },
       {
         text: 'GIT',
+        link: '/posts/aboutgitcmd',
         collapsed: true,
         items: [
           { text: 'Git相关命令', link: '/posts/aboutgitcmd' },
@@ -68,16 +75,15 @@ export default defineConfig({
       },
       {
         text: '待整理',
+        link: '/posts/frpsetup',
         collapsed: true,
         items: [
           { text: 'Frp服务端+客户端搭建', link: '/posts/frpsetup' },
           { text: '搭建HY2服务器', link: '/posts/hysteria2' },
           { text: '本地配置SSL证书', link: '/posts/mkcert' },
           { text: 'Ubuntu22.04下搭建Nginx+PHP+MySql服务', link: '/posts/nginxphpmysql' },
-          { text: '笔记', link: '/posts/noteone' },
+          { text: 'Ubuntu笔记', link: '/posts/noteone' },
           { text: '打造无指纹浏览器', link: '/posts/privateedge' },
-          { text: '系统恢复出厂设置', link: '/posts/recover' },
-          { text: 'Ubuntu-Base制作Rootfs', link: '/posts/ubuntubase' },
           { text: '搭建V2Ray服务器（ws+tls+web）', link: '/posts/v2raywstlsweb' },
           { text: 'XRAY支持REALITY协议', link: '/posts/xtlsrprxvision' }
         ]
