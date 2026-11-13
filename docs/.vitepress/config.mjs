@@ -19,7 +19,8 @@ export default defineConfig({
 
   themeConfig: {
     nav: [
-      { text: '首页', link: '/' }
+      { text: '首页', link: '/' },
+      { text: '关于博主', link: '/posts/aboutme' }
     ],
     sidebar: [
       {
