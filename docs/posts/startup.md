@@ -51,4 +51,15 @@ systemctl enable startup.service
 systemctl daemon-reload
 ```  
 ## 总结
-此方法相对于其他方法更加简单方便，也是Ubuntu现在默认的添加开机启动的方案
+此方法相对于其他方法更加简单方便，也是Ubuntu现在默认的添加开机启动的方案 
+## 再总结 
+```.service```可以放三个位置，不同的位置代表的意义和优先级别也不同   
+1. ```/etc/systemd/system/``` 【最高，管理员自定义】 
+2. ```/run/systemd/system/``` 【运行时临时】 
+3. ```/usr/lib/systemd/system/``` 【包自带原始】 
+另外：  
+```
+Drop-In: /etc/systemd/system/xray.service.d
+             └─10-donot_touch_single_conf.conf
+```
+这个优先级最高，可以修改```/etc/systemd/system/```里的service文件
