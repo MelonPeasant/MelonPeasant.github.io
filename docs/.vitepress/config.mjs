@@ -34,13 +34,25 @@ export default defineConfig({
         ]
       },
       {
-        text: 'VuePress',
-        link: '/posts/vuepresssetup',
+        text: '网络',
+        link: '/posts/zerotier',
         collapsed: true,
         items: [
-          { text: '本地搭建VuePress', link: '/posts/vuepresssetup' },
-          { text: '部署到GitHub Pages', link: '/posts/vuepressdeploy' },
-          { text: 'VuePress笔记', link: '/posts/vuepressnote' }
+          { text: 'Debian/Ubuntu安装Zerotier', link: '/posts/zerotier' },
+          { text: 'Frp服务端+客户端搭建', link: '/posts/frpsetup' },
+          { text: '搭建HY2服务器', link: '/posts/hysteria2' },
+          { text: '搭建V2Ray服务器（ws+tls+web）', link: '/posts/v2raywstlsweb' },
+          { text: 'XRAY支持REALITY协议', link: '/posts/xtlsrprxvision' }
+        ]
+      },
+      {
+        text: '建站',
+        link: '/posts/mkcert',
+        collapsed: true,
+        items: [
+          { text: '本地配置SSL证书', link: '/posts/mkcert' },
+          { text: 'Ubuntu22.04下搭建Nginx+PHP+MySql服务', link: '/posts/nginxphpmysql' },
+          { text: '打造无指纹浏览器', link: '/posts/privateedge' },
         ]
       },
       {
@@ -76,18 +88,13 @@ export default defineConfig({
         ]
       },
       {
-        text: '待整理',
-        link: '/posts/frpsetup',
+        text: 'VuePress',
+        link: '/posts/vuepresssetup',
         collapsed: true,
         items: [
-          { text: 'Frp服务端+客户端搭建', link: '/posts/frpsetup' },
-          { text: '搭建HY2服务器', link: '/posts/hysteria2' },
-          { text: '本地配置SSL证书', link: '/posts/mkcert' },
-          { text: 'Ubuntu22.04下搭建Nginx+PHP+MySql服务', link: '/posts/nginxphpmysql' },
-          { text: 'Ubuntu笔记', link: '/posts/noteone' },
-          { text: '打造无指纹浏览器', link: '/posts/privateedge' },
-          { text: '搭建V2Ray服务器（ws+tls+web）', link: '/posts/v2raywstlsweb' },
-          { text: 'XRAY支持REALITY协议', link: '/posts/xtlsrprxvision' }
+          { text: '本地搭建VuePress', link: '/posts/vuepresssetup' },
+          { text: '部署到GitHub Pages', link: '/posts/vuepressdeploy' },
+          { text: 'VuePress笔记', link: '/posts/vuepressnote' }
         ]
       }
     ],
