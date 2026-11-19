@@ -68,11 +68,12 @@ Drop-In: /etc/systemd/system/startup.service.d
 这个优先级最高，可以修改```/etc/systemd/system/```里的service文件  
 10-donot_touch_single_conf.conf里的内容如下：   
 ```
-  # In case you have a good reason to do so, duplicate this file in the same directory and make yo    ur customizes there.
-  # Or all changes you made will be lost!  # Refer: https://www.freedesktop.org/software/systemd/m    an/systemd.unit.html
- [Service]
-  ExecStart=
-  ExecStart=/usr/local/bin/startup.sh run -c "run data"
-  ```
+# In case you have a good reason to do so, duplicate this file in the same directory and make your customizes there.
+# Or all changes you made will be lost!  
+# Refer: https://www.freedesktop.org/software/systemd/man/systemd.unit.html
+[Service]
+ExecStart=
+ExecStart=/usr/local/bin/startup.sh run -c "run data"
+```
 在第二行的ExecStart里写命令，第一行用于清空原命令的。   
 可以使用`systemctl edit startup.service`编辑这个文件（未尝试）  
