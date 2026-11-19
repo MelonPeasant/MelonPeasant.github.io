@@ -56,8 +56,7 @@ systemctl daemon-reload
 ```.service```可以放三个位置，不同的位置代表的意义和优先级别也不同   
 1. ```/etc/systemd/system/``` 【最高，管理员自定义】 
 2. ```/run/systemd/system/``` 【运行时临时】 
-3. ```/usr/lib/systemd/system/``` 【安装包自带的】  
-    
+3. ```/usr/lib/systemd/system/``` 【安装包自带的】         
 另外：  
 ```
 Drop-In: /etc/systemd/system/xray.service.d
