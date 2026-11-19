@@ -10,7 +10,7 @@ date: '2024-07-30'
 ## 过程  
 ### 制作service文件  
 ```
-vim /usr/lib/systemd/system/startup.service
+vim /etc/systemd/system/startup.service
 ```  
 ```  
 [Unit]
@@ -43,10 +43,12 @@ fi
 chmod +x /usr/local/etc/startup.sh
 ```  
 ### 开机启动
-此步骤相当于将```/usr/lib/systemd/system/startup.sh```链接到```/etc/systemd/system/multi-user.target.wants/startup.service```  
 ```  
 systemctl enable startup.service
-```
+```  
+控制台返回：  
+Created symlink ```/etc/systemd/system/multi-user.target.wants/startup.service``` → ```/etc/systemd/system/startup.service.```
+此步骤相当于将```/etc/systemd/system/startup.sh```链接到```/etc/systemd/system/multi-user.target.wants/startup.service```  
 ```  
 systemctl daemon-reload
 ```  
