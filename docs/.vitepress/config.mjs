@@ -61,6 +61,7 @@ export default defineConfig({
           { text: 'Ubuntu笔记', link: '/posts/ubuntunote' },
           { text: '磁盘格式化并挂载', link: '/posts/formatdisk' },
           { text: '添加开机脚本', link: '/posts/startup' },
+          { text: 'Ubuntu目录', link: '/posts/catlog' }
         ]
       },
       {
