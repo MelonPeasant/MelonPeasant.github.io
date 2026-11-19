@@ -47,7 +47,7 @@ chmod +x /usr/local/etc/startup.sh
 systemctl enable startup.service
 ```  
 控制台返回：  
-Created symlink ```/etc/systemd/system/multi-user.target.wants/startup.service``` → ```/etc/systemd/system/startup.service.```
+Created symlink ```/etc/systemd/system/multi-user.target.wants/startup.service``` → ```/etc/systemd/system/startup.service.```   
 此步骤相当于将```/etc/systemd/system/startup.sh```链接到```/etc/systemd/system/multi-user.target.wants/startup.service```  
 ```  
 systemctl daemon-reload
@@ -59,6 +59,7 @@ systemctl daemon-reload
 1. ```/etc/systemd/system/``` 【最高，管理员自定义】 
 2. ```/run/systemd/system/``` 【运行时临时】 
 3. ```/usr/lib/systemd/system/``` 【安装包自带的】         
+  
 另外：  
 ```
 Drop-In: /etc/systemd/system/xray.service.d
