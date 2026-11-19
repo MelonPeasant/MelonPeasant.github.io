@@ -21,7 +21,7 @@ date: '2026-11-19'
 ### 2. 管理员手动部署（你最常用，xray 就属于这类）  
 
 - `/usr/local/bin`：**全局可用、所有用户都能跑**，自己编译的 Go 二进制、下载的独立程序、shell/python 脚本（推荐首选）Ubuntu
-  - 你的 `/usr/local/bin/xray` 就是这个规范！
+> 系统中的 `/usr/local/bin/xray` 就是这个规范！
 - `/usr/local/sbin`：**只有 root 用的本地工具**，后台守护、运维脚本，普通用户 PATH 一般不带这个
 
 > 
