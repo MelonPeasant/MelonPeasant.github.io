@@ -10,6 +10,10 @@ export default defineConfig({
   // 如果是普通项目仓库才需要 '/仓库名/'，这里不要写仓库名！
   base: '/',
 
+  head: [
+    ['link', { rel: 'icon', href: '/favicon.ico' }]
+  ],
+
   // transformPageData(pageData) {
   //   // 路径以 /posts/ 开头，自动设置布局
   //   if (pageData.frontmatter.layout === undefined && pageData.filePath.startsWith('posts/')) {
